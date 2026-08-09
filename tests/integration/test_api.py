@@ -67,11 +67,7 @@ def testRecommendationValidationError(tmpRepo):
     assert response.status_code == 422
 
 
-def testHealthViaModuleApp():
+def testModuleAppDefersContainerInitialization():
     from procureguard import api
 
-    client = TestClient(api.app)
-    response = client.get("/health")
-    # The module-level app requires a generated dataset; if the repo has one it
-    # returns ok, otherwise it returns a 500 error which is acceptable here.
-    assert response.status_code in (200, 500)
+    assert api.app.state.container is None

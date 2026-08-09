@@ -12,7 +12,8 @@ from __future__ import annotations
 import os
 import time
 import uuid
-from collections.abc import Awaitable, Callable
+from collections.abc import AsyncIterator, Awaitable, Callable
+from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request, Response
@@ -138,10 +139,17 @@ def _requestId(request: Request) -> str:
     return request.headers.get("X-Request-ID") or uuid.uuid4().hex
 
 
+@asynccontextmanager
+async def _appLifespan(app: FastAPI) -> AsyncIterator[None]:
+    """Build default dependencies at startup without import-time I/O."""
+    if app.state.container is None:
+        app.state.container = buildContainer()
+    yield
+
+
 def createApp(container: Container | None = None) -> FastAPI:
     """Create the FastAPI application with an injectable container."""
-    container = container or buildContainer()
-    app = FastAPI(title="ProcureGuard AI", version=__version__)
+    app = FastAPI(title="ProcureGuard AI", version=__version__, lifespan=_appLifespan)
     app.state.container = container
 
     @app.middleware("http")
@@ -167,7 +175,9 @@ def createApp(container: Container | None = None) -> FastAPI:
         request: Request,
     ) -> RecommendationResponse:
         requestId = _requestId(request)
-        activeContainer = request.app.state.container
+        activeContainer: Container | None = request.app.state.container
+        if activeContainer is None:
+            raise HTTPException(status_code=503, detail="Application dependencies are not ready.")
         ctx = engine.DecisionContext(
             query=payload.query,
             supplierId=payload.supplierId,
