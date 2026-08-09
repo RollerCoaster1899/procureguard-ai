@@ -1,0 +1,97 @@
+queryId,method,rankedDocIds,latencyMs
+q000,no_retrieval,[],0.0015
+q000,bm25,"['sup-s00-summary', 'sup-s00-detail', 'pol-004', 'pol-003', 'cat-electronics', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-medical']",0.5228
+q000,lsa_vector,"['sup-s00-summary', 'sup-s00-detail', 'cat-electronics', 'pol-003', 'pol-004', 'cat-steel', 'cat-security', 'cat-agriculture', 'cat-medical', 'cat-logistics']",0.941
+q000,hybrid_rrf,"['sup-s00-summary', 'sup-s00-detail', 'cat-electronics', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-food', 'cat-logistics', 'cat-medical', 'cat-steel']",1.2656
+q001,no_retrieval,[],0.0008
+q001,bm25,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-medical', 'cat-optics']",0.3435
+q001,lsa_vector,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'cat-electronics', 'pol-001', 'cat-pharma', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-medical']",0.7177
+q001,hybrid_rrf,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-001', 'cat-electronics', 'cat-agriculture', 'cat-food', 'cat-pharma', 'cat-industrial', 'cat-medical']",1.1133
+q002,no_retrieval,[],0.0007
+q002,bm25,"['sup-s02-summary', 'sup-s02-detail', 'pol-003', 'pol-002', 'cat-electronics', 'sup-s00-summary', 'sup-s08-summary', 'pol-001', 'sup-s00-detail', 'cat-agriculture']",0.4029
+q002,lsa_vector,"['sup-s02-summary', 'sup-s02-detail', 'pol-003', 'cat-electronics', 'pol-002', 'cat-medical', 'cat-food', 'cat-logistics', 'cat-security', 'cat-steel']",0.7426
+q002,hybrid_rrf,"['sup-s02-summary', 'sup-s02-detail', 'pol-003', 'cat-electronics', 'pol-002', 'cat-food', 'cat-medical', 'cat-logistics', 'cat-agriculture', 'sup-s00-summary']",1.4133
+q003,no_retrieval,[],0.0008
+q003,bm25,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics']",0.4758
+q003,lsa_vector,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-003', 'pol-004', 'cat-electronics', 'cat-security', 'cat-logistics', 'cat-agriculture', 'cat-pharma']",0.7746
+q003,hybrid_rrf,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-003', 'pol-004', 'cat-electronics', 'cat-agriculture', 'cat-logistics', 'cat-security', 'cat-food']",1.24
+q004,no_retrieval,[],0.0007
+q004,bm25,"['sup-s00-summary', 'sup-s00-detail', 'cat-electronics', 'pol-001', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-medical', 'cat-optics']",0.338
+q004,lsa_vector,"['sup-s00-summary', 'sup-s00-detail', 'cat-electronics', 'pol-001', 'cat-steel', 'cat-security', 'cat-agriculture', 'cat-food', 'cat-medical', 'cat-industrial']",0.7151
+q004,hybrid_rrf,"['sup-s00-summary', 'sup-s00-detail', 'cat-electronics', 'pol-001', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-steel', 'cat-security', 'cat-medical']",1.0828
+q005,no_retrieval,[],0.0007
+q005,bm25,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-003', 'pol-004', 'pol-002', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food']",0.9302
+q005,lsa_vector,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-003', 'pol-004', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-pharma', 'cat-medical']",0.7636
+q005,hybrid_rrf,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-003', 'pol-004', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-food', 'cat-medical']",1.9129
+q006,no_retrieval,[],0.0007
+q006,bm25,"['sup-s02-summary', 'sup-s02-detail', 'pol-004', 'pol-003', 'cat-electronics', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-medical']",0.4625
+q006,lsa_vector,"['sup-s02-summary', 'sup-s02-detail', 'cat-electronics', 'pol-003', 'pol-004', 'cat-food', 'cat-agriculture', 'cat-logistics', 'cat-medical', 'cat-security']",1.0307
+q006,hybrid_rrf,"['sup-s02-summary', 'sup-s02-detail', 'cat-electronics', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-food', 'cat-logistics', 'cat-medical', 'cat-industrial']",1.2882
+q007,no_retrieval,[],0.0008
+q007,bm25,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-optics']",0.356
+q007,lsa_vector,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'cat-electronics', 'pol-001', 'cat-security', 'cat-pharma', 'cat-logistics', 'cat-optics', 'cat-agriculture']",0.8196
+q007,hybrid_rrf,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-001', 'cat-electronics', 'cat-agriculture', 'cat-logistics', 'cat-security', 'cat-pharma', 'cat-industrial']",1.2036
+q008,no_retrieval,[],0.0007
+q008,bm25,"['sup-s00-summary', 'sup-s00-detail', 'pol-003', 'pol-002', 'cat-electronics', 'sup-s02-summary', 'sup-s04-summary', 'pol-001', 'sup-s02-detail', 'cat-agriculture']",0.4057
+q008,lsa_vector,"['sup-s00-summary', 'sup-s00-detail', 'pol-003', 'cat-electronics', 'pol-002', 'cat-medical', 'cat-agriculture', 'cat-steel', 'cat-industrial', 'cat-security']",0.7261
+q008,hybrid_rrf,"['sup-s00-summary', 'sup-s00-detail', 'pol-003', 'cat-electronics', 'pol-002', 'cat-agriculture', 'cat-medical', 'cat-industrial', 'sup-s02-summary', 'cat-logistics']",1.1696
+q009,no_retrieval,[],0.0007
+q009,bm25,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-medical']",0.4705
+q009,lsa_vector,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-003', 'pol-004', 'cat-electronics', 'cat-agriculture', 'cat-medical', 'cat-industrial', 'cat-pharma']",0.7518
+q009,hybrid_rrf,"['sup-s01-summary', 'sup-s01-detail', 'cat-logistics', 'pol-003', 'pol-004', 'cat-agriculture', 'cat-electronics', 'cat-medical', 'cat-industrial', 'cat-food']",1.247
+q010,no_retrieval,[],0.0008
+q010,bm25,"['sup-s02-summary', 'sup-s02-detail', 'pol-001', 'cat-electronics', 'pol-004', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-medical']",0.8774
+q010,lsa_vector,"['sup-s02-summary', 'sup-s02-detail', 'cat-electronics', 'pol-001', 'cat-food', 'cat-medical', 'cat-pharma', 'cat-agriculture', 'cat-industrial', 'cat-logistics']",0.7476
+q010,hybrid_rrf,"['sup-s02-summary', 'sup-s02-detail', 'cat-electronics', 'pol-001', 'cat-food', 'cat-agriculture', 'cat-medical', 'cat-industrial', 'cat-pharma', 'cat-logistics']",1.6489
+q011,no_retrieval,[],0.0006
+q011,bm25,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-003', 'pol-002', 'sup-s08-summary', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food']",0.3864
+q011,lsa_vector,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-003', 'pol-002', 'cat-electronics', 'cat-security', 'cat-logistics', 'cat-pharma', 'cat-industrial']",0.7245
+q011,hybrid_rrf,"['sup-s03-summary', 'sup-s03-detail', 'cat-medical', 'pol-003', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-logistics', 'cat-industrial', 'cat-security']",1.193
+q012,no_retrieval,[],0.0007
+q012,bm25,"['sup-s04-summary', 'sup-s04-detail', 'cat-food', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-electronics', 'cat-industrial', 'cat-logistics', 'cat-medical']",0.4539
+q012,lsa_vector,"['sup-s04-summary', 'sup-s04-detail', 'cat-food', 'pol-003', 'pol-004', 'cat-electronics', 'cat-agriculture', 'cat-logistics', 'cat-security', 'cat-steel']",0.8294
+q012,hybrid_rrf,"['sup-s04-summary', 'sup-s04-detail', 'cat-food', 'pol-003', 'pol-004', 'cat-agriculture', 'cat-electronics', 'cat-logistics', 'cat-medical', 'cat-industrial']",1.2033
+q013,no_retrieval,[],0.0008
+q013,bm25,"['sup-s05-summary', 'sup-s05-detail', 'cat-industrial', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-logistics', 'cat-medical', 'cat-optics']",0.344
+q013,lsa_vector,"['sup-s05-summary', 'sup-s05-detail', 'cat-industrial', 'cat-electronics', 'pol-001', 'cat-steel', 'cat-food', 'cat-logistics', 'cat-agriculture', 'cat-optics']",0.7659
+q013,hybrid_rrf,"['sup-s05-summary', 'sup-s05-detail', 'cat-industrial', 'pol-001', 'cat-electronics', 'cat-agriculture', 'cat-food', 'cat-logistics', 'cat-steel', 'cat-optics']",1.1672
+q014,no_retrieval,[],0.0007
+q014,bm25,"['sup-s06-summary', 'sup-s06-detail', 'cat-pharma', 'pol-003', 'pol-002', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial']",0.4266
+q014,lsa_vector,"['sup-s06-summary', 'sup-s06-detail', 'cat-pharma', 'pol-003', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-medical', 'cat-security', 'cat-logistics']",0.8076
+q014,hybrid_rrf,"['sup-s06-summary', 'sup-s06-detail', 'cat-pharma', 'pol-003', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-medical', 'cat-logistics', 'pol-001']",1.2074
+q015,no_retrieval,[],0.0007
+q015,bm25,"['sup-s07-detail', 'sup-s07-summary', 'cat-optics', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics']",0.9884
+q015,lsa_vector,"['sup-s07-detail', 'sup-s07-summary', 'cat-optics', 'pol-004', 'pol-003', 'cat-electronics', 'cat-food', 'cat-security', 'cat-agriculture', 'cat-industrial']",0.7536
+q015,hybrid_rrf,"['sup-s07-detail', 'sup-s07-summary', 'cat-optics', 'pol-004', 'pol-003', 'cat-electronics', 'cat-agriculture', 'cat-food', 'cat-industrial', 'cat-security']",1.8284
+q016,no_retrieval,[],0.0009
+q016,bm25,"['sup-s04-summary', 'sup-s04-detail', 'cat-food', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-industrial', 'cat-logistics', 'cat-medical', 'cat-optics']",0.3403
+q016,lsa_vector,"['sup-s04-summary', 'sup-s04-detail', 'cat-food', 'cat-electronics', 'pol-001', 'cat-security', 'cat-optics', 'cat-agriculture', 'cat-industrial', 'cat-steel']",0.7253
+q016,hybrid_rrf,"['sup-s04-summary', 'sup-s04-detail', 'cat-food', 'pol-001', 'cat-electronics', 'cat-agriculture', 'cat-industrial', 'cat-optics', 'cat-security', 'cat-logistics']",1.1005
+q017,no_retrieval,[],0.0007
+q017,bm25,"['sup-s05-summary', 'sup-s05-detail', 'pol-003', 'pol-002', 'cat-industrial', 'pol-001', 'sup-s00-summary', 'sup-s04-summary', 'cat-agriculture', 'cat-electronics']",0.3983
+q017,lsa_vector,"['sup-s05-summary', 'sup-s05-detail', 'cat-industrial', 'pol-003', 'pol-002', 'cat-electronics', 'cat-logistics', 'cat-steel', 'cat-agriculture', 'cat-food']",0.7432
+q017,hybrid_rrf,"['sup-s05-summary', 'sup-s05-detail', 'pol-003', 'cat-industrial', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-logistics', 'cat-food', 'sup-s00-summary']",1.1591
+q018,no_retrieval,[],0.0009
+q018,bm25,"['sup-s08-summary', 'sup-s08-detail', 'cat-steel', 'pol-004', 'pol-003', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics']",0.4528
+q018,lsa_vector,"['sup-s08-summary', 'sup-s08-detail', 'cat-steel', 'pol-003', 'pol-004', 'cat-electronics', 'cat-agriculture', 'cat-security', 'cat-industrial', 'cat-pharma']",0.7293
+q018,hybrid_rrf,"['sup-s08-summary', 'sup-s08-detail', 'cat-steel', 'pol-003', 'pol-004', 'cat-agriculture', 'cat-electronics', 'cat-industrial', 'cat-food', 'cat-security']",1.209
+q019,no_retrieval,[],0.0007
+q019,bm25,"['sup-s09-summary', 'sup-s09-detail', 'cat-it-services', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-medical']",0.3514
+q019,lsa_vector,"['sup-s09-summary', 'sup-s09-detail', 'cat-it-services', 'cat-electronics', 'cat-pharma', 'cat-industrial', 'cat-security', 'cat-agriculture', 'cat-optics', 'cat-steel']",0.757
+q019,hybrid_rrf,"['sup-s09-summary', 'sup-s09-detail', 'cat-it-services', 'cat-electronics', 'cat-agriculture', 'cat-industrial', 'cat-pharma', 'pol-001', 'cat-food', 'cat-security']",1.1802
+q020,no_retrieval,[],0.0007
+q020,bm25,"['sup-s10-summary', 'sup-s10-detail', 'cat-security', 'pol-003', 'pol-002', 'pol-001', 'sup-s05-summary', 'sup-s09-summary', 'cat-agriculture', 'cat-electronics']",0.4105
+q020,lsa_vector,"['sup-s10-summary', 'sup-s10-detail', 'cat-security', 'pol-003', 'pol-002', 'cat-electronics', 'cat-steel', 'cat-pharma', 'cat-medical', 'cat-optics']",0.7732
+q020,hybrid_rrf,"['sup-s10-summary', 'sup-s10-detail', 'cat-security', 'pol-003', 'pol-002', 'cat-electronics', 'cat-agriculture', 'cat-medical', 'cat-steel', 'cat-pharma']",1.1896
+q021,no_retrieval,[],0.0006
+q021,bm25,"['sup-s11-summary', 'sup-s11-detail', 'cat-agriculture', 'pol-004', 'pol-003', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics', 'cat-medical']",0.4558
+q021,lsa_vector,"['sup-s11-summary', 'sup-s11-detail', 'cat-agriculture', 'pol-003', 'pol-004', 'cat-electronics', 'cat-logistics', 'cat-food', 'cat-industrial', 'cat-pharma']",0.7418
+q021,hybrid_rrf,"['sup-s11-summary', 'sup-s11-detail', 'cat-agriculture', 'pol-003', 'pol-004', 'cat-electronics', 'cat-food', 'cat-logistics', 'cat-industrial', 'cat-pharma']",1.215
+q022,no_retrieval,[],0.0007
+q022,bm25,"['sup-s08-summary', 'sup-s08-detail', 'cat-steel', 'pol-001', 'pol-004', 'cat-agriculture', 'cat-electronics', 'cat-food', 'cat-industrial', 'cat-logistics']",0.8759
+q022,lsa_vector,"['sup-s08-summary', 'sup-s08-detail', 'cat-steel', 'pol-001', 'cat-electronics', 'cat-agriculture', 'cat-industrial', 'cat-food', 'cat-medical', 'cat-optics']",0.7597
+q022,hybrid_rrf,"['sup-s08-summary', 'sup-s08-detail', 'cat-steel', 'pol-001', 'cat-electronics', 'cat-agriculture', 'cat-industrial', 'cat-food', 'pol-004', 'cat-medical']",1.6877
+q023,no_retrieval,[],0.0007
+q023,bm25,"['sup-s09-summary', 'sup-s09-detail', 'pol-003', 'pol-004', 'cat-it-services', 'pol-002', 'pol-001', 'cat-agriculture', 'cat-electronics', 'cat-food']",0.9525
+q023,lsa_vector,"['sup-s09-detail', 'sup-s09-summary', 'cat-it-services', 'pol-003', 'pol-004', 'cat-electronics', 'cat-steel', 'cat-agriculture', 'cat-pharma', 'cat-industrial']",0.7371
+q023,hybrid_rrf,"['sup-s09-detail', 'sup-s09-summary', 'pol-003', 'cat-it-services', 'pol-004', 'cat-electronics', 'cat-agriculture', 'cat-industrial', 'pol-002', 'cat-food']",1.707

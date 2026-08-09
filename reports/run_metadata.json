@@ -1,0 +1,12 @@
+{
+  "configPath": "configs/base.yaml",
+  "finishedAt": "2026-08-09T17:57:33Z",
+  "platform": "Linux-6.5.6-76060506-generic-x86_64-with-glibc2.35",
+  "provider": "scripted",
+  "pythonVersion": "3.12.6",
+  "runId": "0602008128a9",
+  "seed": 42,
+  "smoke": false,
+  "startedAt": "2026-08-09T17:57:30Z",
+  "status": "completed"
+}

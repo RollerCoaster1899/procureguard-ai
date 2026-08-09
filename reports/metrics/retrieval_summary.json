@@ -1,0 +1,114 @@
+{
+  "methods": [
+    "no_retrieval",
+    "bm25",
+    "lsa_vector",
+    "hybrid_rrf"
+  ],
+  "numQueries": 24,
+  "precisionK": 5,
+  "results": {
+    "bm25": {
+      "meanLatencyMs": 0.5176,
+      "metrics": {
+        "mrr@10": {
+          "ciHigh": 1.0,
+          "ciLow": 1.0,
+          "mean": 1.0
+        },
+        "ndcg@10": {
+          "ciHigh": 0.921329,
+          "ciLow": 0.858329,
+          "mean": 0.887973
+        },
+        "precision@5": {
+          "ciHigh": 0.766667,
+          "ciLow": 0.683333,
+          "mean": 0.725
+        },
+        "recall@10": {
+          "ciHigh": 0.9125,
+          "ciLow": 0.815171,
+          "mean": 0.863095
+        }
+      }
+    },
+    "hybrid_rrf": {
+      "meanLatencyMs": 1.318,
+      "metrics": {
+        "mrr@10": {
+          "ciHigh": 1.0,
+          "ciLow": 1.0,
+          "mean": 1.0
+        },
+        "ndcg@10": {
+          "ciHigh": 0.890359,
+          "ciLow": 0.823601,
+          "mean": 0.857807
+        },
+        "precision@5": {
+          "ciHigh": 0.758333,
+          "ciLow": 0.675,
+          "mean": 0.716667
+        },
+        "recall@10": {
+          "ciHigh": 0.844382,
+          "ciLow": 0.754762,
+          "mean": 0.798512
+        }
+      }
+    },
+    "lsa_vector": {
+      "meanLatencyMs": 0.7741,
+      "metrics": {
+        "mrr@10": {
+          "ciHigh": 1.0,
+          "ciLow": 1.0,
+          "mean": 1.0
+        },
+        "ndcg@10": {
+          "ciHigh": 0.880045,
+          "ciLow": 0.817025,
+          "mean": 0.847673
+        },
+        "precision@5": {
+          "ciHigh": 0.758333,
+          "ciLow": 0.675,
+          "mean": 0.716667
+        },
+        "recall@10": {
+          "ciHigh": 0.827098,
+          "ciLow": 0.735409,
+          "mean": 0.781845
+        }
+      }
+    },
+    "no_retrieval": {
+      "meanLatencyMs": 0.0008,
+      "metrics": {
+        "mrr@10": {
+          "ciHigh": 0.0,
+          "ciLow": 0.0,
+          "mean": 0.0
+        },
+        "ndcg@10": {
+          "ciHigh": 0.0,
+          "ciLow": 0.0,
+          "mean": 0.0
+        },
+        "precision@5": {
+          "ciHigh": 0.0,
+          "ciLow": 0.0,
+          "mean": 0.0
+        },
+        "recall@10": {
+          "ciHigh": 0.0,
+          "ciLow": 0.0,
+          "mean": 0.0
+        }
+      }
+    }
+  },
+  "runId": "0602008128a9",
+  "topK": 10
+}

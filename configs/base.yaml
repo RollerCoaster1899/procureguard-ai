@@ -1,0 +1,29 @@
+# Base configuration for ProcureGuard AI.
+# All values are deterministic and validated by pydantic in src/procureguard/config.py.
+
+data:
+  seed: 42
+  numSuppliers: 12
+  numScenarios: 24
+  trainCount: 12
+  valCount: 6
+  testCount: 6
+  adversarialIndices: [5, 10, 15, 22, 23]
+  numPolicyDocs: 10
+
+retrieval:
+  topK: 10
+  candidateCount: 200
+  lsaComponents: 100
+  rrfK: 60
+
+workflow:
+  topK: 5
+  methods: [rules_baseline, rag_only, rag_mcp, guarded_rag_mcp]
+  provider: scripted
+  mcpTimeoutSeconds: 15.0
+
+bootstrap:
+  nResamples: 1000
+  seed: 7
+  alpha: 0.05

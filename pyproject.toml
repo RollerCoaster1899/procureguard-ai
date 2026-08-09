@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "procureguard"
+version = "0.1.0"
+description = "ProcureGuard AI: synthetic enterprise procurement decision copilot with retrieval and guarded RAG-MCP benchmarking"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "ProcureGuard AI" }]
+keywords = ["procurement", "rag", "mcp", "llm", "benchmark", "synthetic"]
+dependencies = [
+    "pydantic>=2.7,<3",
+    "PyYAML>=6.0,<7",
+    "numpy>=1.26,<3",
+    "scipy>=1.11,<2",
+    "scikit-learn>=1.4,<2",
+    "rank-bm25>=0.2.2,<0.3",
+    "openai>=1.40,<3",
+    "mcp>=1.12.4,<2",
+    "fastapi>=0.111,<1",
+    "uvicorn>=0.30,<1",
+    "matplotlib>=3.8,<4",
+    "typer>=0.12,<1",
+    "httpx>=0.27,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "bandit>=1.7",
+    "pip-audit>=2.7",
+    "pre-commit>=3.5",
+]
+
+[project.scripts]
+procureguard = "procureguard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src/procureguard --cov-branch --cov-report=term --cov-report=xml --tb=short"
+norecursedirs = ["__pycache__", ".git", ".venv", "reports", "reports_smoke"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.coverage.report]
+fail_under = 80
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "S", "B", "SIM", "ARG"]
+ignore = ["N802", "N803", "N806", "N815", "N816", "S101"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "S311", "E501", "ARG001", "ARG002", "ARG005"]
+"scripts/*" = ["S101"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+warn_unused_ignores = true
+exclude = ["tests/", "scripts/"]
+files = ["src"]
+
+[tool.bandit]
+exclude_dirs = ["tests", "scripts", ".venv"]

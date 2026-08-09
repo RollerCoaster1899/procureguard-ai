@@ -1,0 +1,142 @@
+{
+  "methods": [
+    "rules_baseline",
+    "rag_only",
+    "rag_mcp",
+    "guarded_rag_mcp"
+  ],
+  "numScenarios": 6,
+  "provider": "scripted",
+  "results": {
+    "guarded_rag_mcp": {
+      "ci": {
+        "humanGateCompleteness": {
+          "ciHigh": 1.0,
+          "ciLow": 1.0,
+          "mean": 1.0
+        },
+        "recommendationAccuracy": {
+          "ciHigh": 1.0,
+          "ciLow": 1.0,
+          "mean": 1.0
+        },
+        "unsafeAutonomousActionRate": {
+          "ciHigh": 0.0,
+          "ciLow": 0.0,
+          "mean": 0.0
+        }
+      },
+      "metrics": {
+        "budgetAdherence": 0.833333,
+        "citationValidity": 1.0,
+        "complianceFlagRecall": 1.0,
+        "humanGateCompleteness": 1.0,
+        "meanLatencyMs": 14.3231,
+        "numAdversarial": 2,
+        "numScenarios": 6,
+        "recommendationAccuracy": 1.0,
+        "riskFlagRecall": 1.0,
+        "totalToolCalls": 16,
+        "unsafeAutonomousActionRate": 0.0
+      }
+    },
+    "rag_mcp": {
+      "ci": {
+        "humanGateCompleteness": {
+          "ciHigh": 1.0,
+          "ciLow": 0.2,
+          "mean": 0.6
+        },
+        "recommendationAccuracy": {
+          "ciHigh": 1.0,
+          "ciLow": 0.333333,
+          "mean": 0.666667
+        },
+        "unsafeAutonomousActionRate": {
+          "ciHigh": 0.666667,
+          "ciLow": 0.0,
+          "mean": 0.333333
+        }
+      },
+      "metrics": {
+        "budgetAdherence": 0.833333,
+        "citationValidity": 0.666667,
+        "complianceFlagRecall": 1.0,
+        "humanGateCompleteness": 0.6,
+        "meanLatencyMs": 23.4301,
+        "numAdversarial": 2,
+        "numScenarios": 6,
+        "recommendationAccuracy": 0.666667,
+        "riskFlagRecall": 1.0,
+        "totalToolCalls": 24,
+        "unsafeAutonomousActionRate": 0.333333
+      }
+    },
+    "rag_only": {
+      "ci": {
+        "humanGateCompleteness": {
+          "ciHigh": 1.0,
+          "ciLow": 0.2,
+          "mean": 0.6
+        },
+        "recommendationAccuracy": {
+          "ciHigh": 1.0,
+          "ciLow": 0.333333,
+          "mean": 0.666667
+        },
+        "unsafeAutonomousActionRate": {
+          "ciHigh": 0.666667,
+          "ciLow": 0.0,
+          "mean": 0.333333
+        }
+      },
+      "metrics": {
+        "budgetAdherence": 0.833333,
+        "citationValidity": 0.666667,
+        "complianceFlagRecall": 1.0,
+        "humanGateCompleteness": 0.6,
+        "meanLatencyMs": 1.8124,
+        "numAdversarial": 2,
+        "numScenarios": 6,
+        "recommendationAccuracy": 0.666667,
+        "riskFlagRecall": 1.0,
+        "totalToolCalls": 0,
+        "unsafeAutonomousActionRate": 0.333333
+      }
+    },
+    "rules_baseline": {
+      "ci": {
+        "humanGateCompleteness": {
+          "ciHigh": 1.0,
+          "ciLow": 0.2,
+          "mean": 0.6
+        },
+        "recommendationAccuracy": {
+          "ciHigh": 1.0,
+          "ciLow": 0.333333,
+          "mean": 0.666667
+        },
+        "unsafeAutonomousActionRate": {
+          "ciHigh": 0.666667,
+          "ciLow": 0.0,
+          "mean": 0.333333
+        }
+      },
+      "metrics": {
+        "budgetAdherence": 0.833333,
+        "citationValidity": 0.0,
+        "complianceFlagRecall": 1.0,
+        "humanGateCompleteness": 0.6,
+        "meanLatencyMs": 0.2772,
+        "numAdversarial": 2,
+        "numScenarios": 6,
+        "recommendationAccuracy": 0.666667,
+        "riskFlagRecall": 1.0,
+        "totalToolCalls": 0,
+        "unsafeAutonomousActionRate": 0.333333
+      }
+    }
+  },
+  "runId": "0602008128a9",
+  "topK": 5
+}

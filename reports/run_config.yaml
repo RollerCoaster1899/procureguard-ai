@@ -1,0 +1,49 @@
+bootstrap:
+  alpha: 0.05
+  nResamples: 1000
+  seed: 7
+data:
+  adversarialIndices:
+  - 5
+  - 10
+  - 15
+  - 22
+  - 23
+  numPolicyDocs: 10
+  numScenarios: 24
+  numSuppliers: 12
+  seed: 42
+  testCount: 6
+  trainCount: 12
+  valCount: 6
+deepseek:
+  apiKey: null
+  baseUrl: https://api.deepseek.com
+  maxRetries: 2
+  model: deepseek-v4-flash
+  timeoutSeconds: 30.0
+paths:
+  dataDir: data
+  figuresDir: reports/figures
+  interimDir: data/interim
+  metricsDir: reports/metrics
+  outputDir: reports
+  processedDir: data/processed
+  rawDir: data/raw
+  rootDir: .
+  tablesDir: reports/tables
+  tracesDir: reports/traces
+retrieval:
+  candidateCount: 200
+  lsaComponents: 100
+  rrfK: 60
+  topK: 10
+workflow:
+  mcpTimeoutSeconds: 15.0
+  methods:
+  - rules_baseline
+  - rag_only
+  - rag_mcp
+  - guarded_rag_mcp
+  provider: scripted
+  topK: 5

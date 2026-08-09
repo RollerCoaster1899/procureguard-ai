@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use ProcureGuard AI in your work, please cite it as follows."
+title: "ProcureGuard AI: Synthetic Enterprise Procurement Decision Copilot Benchmark"
+abstract: >-
+  A reproducible offline benchmark for retrieval quality and guarded RAG-MCP
+  decision safety on a fully synthetic enterprise procurement dataset.
+authors:
+  - name: "ProcureGuard AI Contributors"
+date-released: "2026-08-09"
+license: "MIT"
+keywords:
+  - procurement
+  - retrieval
+  - RAG
+  - MCP
+  - benchmark
+  - synthetic
+  - LLM safety
+version: "0.1.0"
